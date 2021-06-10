@@ -4,5 +4,5 @@
 <h1># Netmatters-Reflection-One</h1>
 </h2>A reflection on HTML and CSS learning by building a clone of the https://netmatters.co.uk site.</h2>
 
-*This is a clone of a commerical website created with permission of the content owner.*  
+*This is a clone of a commercial website created with permission of the content owner.*  
 *© Copyright Netmatters Ltd. 2021. All rights reserved.*
