@@ -1,0 +1,21 @@
+/* ================================= 
+  IMPORTS
+==================================== */
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* ================================= 
+  BASE STYLES
+==================================== */
+
+/* Include border and padding in total dimensions */
+* {
+  box-sizing: border-box;
+}
+
+/* Set the specific height for the entire document relative to the viewport */
+body,
+html {
+  height: 100%;
+}
+
