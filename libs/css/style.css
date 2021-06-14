@@ -88,4 +88,49 @@ img {
   border-left: none;
   padding: 5px;
 }
+
+/* ================================= 
+  GALLERY
+==================================== */
+.gallery-image {
+  background-image: linear-gradient(to right, #000000ff, #00000060), url("../img/home-lQs1.jpg");
+  height: 571.2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-text {
+  color: #fff;
+  min-width: 90%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.gallery-text h1 {
+  font-size: 3rem;
+  margin: 0 0 25px;
+}
+
+.gallery-text p {
+  font-size: 1.25rem;
+  letter-spacing: .4px;
+  line-height: 2.25rem;
+  margin: 0 0 35px;
+}
+
+.gallery-text button {
+  font: inherit;
+  outline: inherit;
+  color: #fff;
+  background-color: #f62459;
+  border: solid 2px #f62459;
+  border-radius: 3px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  line-height: 50px;
+}
 /*# sourceMappingURL=style.css.map */
