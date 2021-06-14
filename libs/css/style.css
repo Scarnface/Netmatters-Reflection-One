@@ -4,14 +4,88 @@
 /* ================================= 
   BASE STYLES
 ==================================== */
-/* Include border and padding in total dimensions */
 * {
+  /* Include border and padding in total dimensions */
   box-sizing: border-box;
+  /* Removes auto margins added by browsers */
+  margin: 0;
 }
 
 /* Set the specific height for the entire document relative to the viewport */
 body,
 html {
   height: 100%;
+  width: 100%;
+}
+
+/* ================================= 
+  ELEMENT STYLES
+==================================== */
+img {
+  max-width: 100%;
+}
+
+/* ================================= 
+  HEADER
+==================================== */
+.header {
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: 199.583px 1fr 1fr;
+  grid-template-rows: 70px 58px;
+  align-items: center;
+  justify-items: center;
+}
+
+.header :last-child {
+  grid-column: span 3;
+  align-self: end;
+}
+
+#header-phone {
+  margin-left: 15px;
+  font-size: 32px;
+  color: #22242e;
+  transform: rotate(-45deg);
+}
+
+#hamburger-button {
+  height: 56px;
+  width: 63.0167px;
+  margin-left: 20px;
+  border-radius: 3px;
+  padding-bottom: 10px;
+  font-size: .75rem;
+  color: #fff;
+  background-color: #22242e;
+  border-color: #191a22;
+}
+
+#hamburger-bars {
+  font-size: 32px;
+  transform: scaleY(0.65);
+}
+
+#search-input, #search-button {
+  height: 47px;
+  float: left;
+  color: inherit;
+  border: solid 2px #d3d3d3;
+  font: inherit;
+  outline: inherit;
+  background-color: #e6e6e6;
+}
+
+#search-input {
+  width: 298.4px;
+  border-right: none;
+  padding: 15px;
+}
+
+#search-button {
+  font-size: 1.25em;
+  cursor: pointer;
+  border-left: none;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */

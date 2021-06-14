@@ -12,34 +12,40 @@
     <!-- ================================= 
       SITE RESOURCES
     ================================== -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="libs/css/style.css" />
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/a36ca304f3.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
-    <!-- ================================= 
-      HEADER
-    ================================== -->
+  <!-- ================================= 
+    HEADER
+  ================================== -->
     <div class="header">
-      <a class="link" href="#">
-        <div class="img-container">
-          <img src="libs/img/logo.png" alt="netmatters logo">
-        </div>
-      </a>
 
-      <a class="link" href="#">
-        <i class="fas fa-phone-volume"></i>
-      </a>
+      <div id="logo-container">
+        <a href="#">
+            <img src="libs/img/logo.png" alt="netmatters logo">
+        </a>
+      </div>
 
-      <button class="hamburger-menu" type="button">MENU</button>
+      <div id="phone-container">
+        <a href="#">
+          <i id="header-phone" class="fas fa-phone-volume"></i>
+        </a>
+      </div>
 
-      <form class="search-form" method="GET" action="#">
-        <input class="search-input" type="text" name="search-query" value="" placeholder="Search...">
-        <button class="search-button" type="button"><i class="fas fa-search"></i></button>
-      </form>
+      <div id="hamburger-container">
+        <button id="hamburger-button" type="button"><i id="hamburger-bars" class="fas fa-bars"></i></br>MENU</button>
+      </div>
+
+      <div id="search-container">
+        <input id="search-input" type="text" name="search-query" value="" placeholder="Search...">
+        <button id="search-button" type="button"><i class="fas fa-search"></i></button>
+      </div>
     </div>
+
 
     <!-- ================================= 
       GALLERY
