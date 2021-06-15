@@ -44,7 +44,7 @@ button {
   HEADER
 ==================================== */
 
-.header {
+#header {
   padding: 20px 15px;
   display: grid;
   grid-template-columns: 199.583px 1fr 1fr;
@@ -81,27 +81,27 @@ button {
   transform: scaleY(0.65);
 }
 
-#search-input, #search-button {
-  height: 47px;
-  float:left;
-  color: inherit;
-	border: solid 2px #d3d3d3;
-	font: inherit;
-	outline: inherit;
-  background-color: #e6e6e6;
-}
-
-#search-input {
-  width: 298.4px;
-  border-right: none;
-  padding: 15px;
-}
-
-#search-button {
-  font-size: 1.25em;
-  cursor: pointer;
-  border-left: none;
-  padding: 5px;
+#search-container {
+  input, button {
+    height: 47px;
+    float:left;
+    color: inherit;
+    border: solid 2px #d3d3d3;
+    font: inherit;
+    outline: inherit;
+    background-color: #e6e6e6;
+  }
+  input {
+    width: 298.4px;
+    border-right: none;
+    padding: 15px;
+  }
+  button {
+    font-size: 1.25em;
+    cursor: pointer;
+    border-left: none;
+    padding: 5px;
+  }
 }
 
 /* ================================= 
@@ -153,7 +153,7 @@ button {
   CARDS
 ==================================== */
 
-.services-cards {
+#services-cards {
   background-color: #e6e6e6;
   max-width: 100%;
   padding: 15px;
@@ -278,7 +278,7 @@ button {
   CULTURE
 ==================================== */
 
-.our-culture {
+#our-culture {
   margin-right: auto;
   margin-left: auto;
   padding: 50px 15px;
@@ -317,3 +317,8 @@ button {
     line-height: 35px;
   }
 }
+
+/* ================================= 
+  NEWS
+==================================== */
+

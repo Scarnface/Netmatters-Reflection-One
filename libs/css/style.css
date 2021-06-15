@@ -40,7 +40,7 @@ button {
 /* ================================= 
   HEADER
 ==================================== */
-.header {
+#header {
   padding: 20px 15px;
   display: grid;
   grid-template-columns: 199.583px 1fr 1fr;
@@ -49,7 +49,7 @@ button {
   justify-items: center;
 }
 
-.header :last-child {
+#header :last-child {
   grid-column: span 3;
   align-self: end;
 }
@@ -78,7 +78,7 @@ button {
   transform: scaleY(0.65);
 }
 
-#search-input, #search-button {
+#search-container input, #search-container button {
   height: 47px;
   float: left;
   color: inherit;
@@ -88,13 +88,13 @@ button {
   background-color: #e6e6e6;
 }
 
-#search-input {
+#search-container input {
   width: 298.4px;
   border-right: none;
   padding: 15px;
 }
 
-#search-button {
+#search-container button {
   font-size: 1.25em;
   cursor: pointer;
   border-left: none;
@@ -151,7 +151,7 @@ button {
 /* ================================= 
   CARDS
 ==================================== */
-.services-cards {
+#services-cards {
   background-color: #e6e6e6;
   max-width: 100%;
   padding: 15px;
@@ -267,7 +267,7 @@ button {
 /* ================================= 
   CULTURE
 ==================================== */
-.our-culture {
+#our-culture {
   margin-right: auto;
   margin-left: auto;
   padding: 50px 15px;
@@ -276,7 +276,7 @@ button {
   color: #fff;
 }
 
-.our-culture h1 {
+#our-culture h1 {
   margin: -6px 0 28px;
   text-transform: uppercase;
   font-size: 2.25rem;
@@ -285,18 +285,18 @@ button {
   line-height: 1.1;
 }
 
-.our-culture P {
+#our-culture P {
   margin-bottom: 25px;
   font-weight: 400;
   letter-spacing: .4px;
   line-height: 1.875rem;
 }
 
-.our-culture P strong {
+#our-culture P strong {
   font-weight: 600;
 }
 
-.our-culture button {
+#our-culture button {
   height: auto;
   font: inherit;
   outline: inherit;
@@ -310,4 +310,8 @@ button {
   font-size: 1.063rem;
   line-height: 35px;
 }
+
+/* ================================= 
+  NEWS
+==================================== */
 /*# sourceMappingURL=style.css.map */
