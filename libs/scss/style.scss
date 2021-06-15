@@ -158,9 +158,10 @@ img {
 }
 
 .card {
-  display: block;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   text-align: center;
-  color: #333645;
   background-color: #fff;
   margin-top: 30px;
   border: solid 2px #d3d3d3;
@@ -173,14 +174,13 @@ img {
   h2 {
     font-size: 1.125rem;
     font-weight: 400;
-    padding-bottom: 17px;
-    margin: 0 0 11px;
+    margin: 0 0 8.2px;
     line-height: 1.1;
     letter-spacing: .4px;
     &::after {
       font-family: Arial, Helvetica, sans-serif;
       content: "——";
-      position: absolute;
+      position: relative;
       bottom: 1;
       left: 0;
       right: 0;
@@ -195,31 +195,78 @@ img {
     &.card-text{
       font-size: .8125rem;
     }
+    &.card-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 17px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+    }
   }
   button {
-    font: inherit;
-    outline: inherit;
-    color: #fff;
-    background-color: #67809f;
+    width: 129.3px;
+    margin-top:auto;
     border: solid 1px transparent;
-    line-height: 35px;
-    padding: 5px 15px;
-    font-size: 1.063rem;
     border-radius: 3px;
+    padding: 5px 15px;
+    outline: inherit;
+    font: inherit;
+    font-size: 1.063rem;
+    line-height: 35px;
   }
 }
 
-.card-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 17px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  color: #fff;
-  background-color: #67809f;
+// CARD COLOURS
+#card-one {
+  p.card-icon, button {
+    color: #fff;
+    background-color: #67809f;
+  }
+}
+
+#card-two {
+  p.card-icon, button {
+    color: #fff;
+    background-color: #4183d7;
+  }
+}
+
+#card-three {
+  p.card-icon, button {
+    color: #fff;
+    background-color: #2ecc71;
+  }
+}
+
+#card-four {
+  p.card-icon, button {
+    color: #fff;
+    background-color: #d64541;
+  }
+}
+
+#card-five {
+  p.card-icon, button {
+    color: #fff;
+    background-color: #926fb1;
+  }
+}
+
+#card-six {
+  p.card-icon, button {
+    color: #fff;
+    background-color: #f62459;
+  }
+}
+
+#card-seven {
+  p.card-icon, button {
+    color: #fff;
+    background-color: #926fb1;
+  }
 }
 
 /* ================================= 
