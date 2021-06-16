@@ -222,7 +222,6 @@ button {
 }
 
 .card button {
-  width: 129.3px;
   margin-top: auto;
   border: solid 1px transparent;
   border-radius: 3px;
@@ -410,7 +409,6 @@ button {
 .news-card-info button {
   color: #fff;
   background-color: #4183d7;
-  width: 129.3px;
   margin-top: auto;
   border: solid 1px transparent;
   border-radius: 3px;
@@ -486,8 +484,7 @@ button {
 #newsletter button {
   color: #fff;
   background-color: #333645;
-  width: 129.3px;
-  margin-top: 25px;
+  margin-top: 30px;
   border: solid 1px transparent;
   border-radius: 3px;
   padding: 5px 15px;
