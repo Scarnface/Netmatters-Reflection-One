@@ -154,7 +154,7 @@ button {
 ==================================== */
 
 #services-cards {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   max-width: 100%;
   padding: 15px;
   display: flex;
@@ -169,7 +169,7 @@ button {
   text-align: center;
   background-color: #fff;
   margin-top: 30px;
-  border: solid 2px #d3d3d3;
+  border: solid 1px #d3d3d3;
   padding: 30px;
   width: 330px;
   height: 334px;
@@ -344,13 +344,39 @@ button {
 }
 
 #news-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 50px 15px 20px;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
+}
+
+.news-image-container {
+  position: relative;
+}
+
+.card-overlay-button {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  background-color: #4183d7;
+  border: solid 1px transparent;
+  outline: inherit;
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 600;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  z-index: 1;
 }
 
 .news-card {
+  width: 370px;
   background-color: #fff;
   margin-bottom: 30px;
+  border: solid 1px #d3d3d3;
 }
 
 .card-divider {
