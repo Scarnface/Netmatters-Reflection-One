@@ -1,45 +1,14 @@
 @charset "UTF-8";
 /* ================================= 
+  VARIABLES
+==================================== */
+/* ================================= 
   IMPORTS
 ==================================== */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-/* ================================= 
-  BASE STYLES
-==================================== */
-* {
-  /* Include border and padding in total dimensions */
-  box-sizing: border-box;
-  /* Removes auto margins added by browsers */
-  margin: 0;
-}
-
-body,
-html {
-  /* Set the specific height for the entire document relative to the viewport */
-  height: 100%;
-  /* Set the base font styling throughout the document */
-  font-family: Poppins,sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-/* Makes images fit their containers */
-img {
-  max-width: 100%;
-}
-
-/* Remove default styling on buttons to allow custom styling */
-button {
-  text-transform: uppercase;
-  text-decoration: none;
-  font: inherit;
-  outline: inherit;
-  cursor: pointer;
-}
-
 /* ================================= 
   HEADER
 ==================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 #header {
   padding: 20px 15px;
   display: grid;
@@ -627,5 +596,39 @@ button {
 
 .about-wrapper {
   margin-bottom: 30px;
+}
+
+/* ================================= 
+  BASE STYLES
+==================================== */
+* {
+  /* Include border and padding in total dimensions */
+  box-sizing: border-box;
+  /* Removes auto margins added by browsers */
+  margin: 0;
+}
+
+body,
+html {
+  /* Set the specific height for the entire document relative to the viewport */
+  height: 100%;
+  /* Set the base font styling throughout the document */
+  font-family: Poppins,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Makes images fit their containers */
+img {
+  max-width: 100%;
+}
+
+/* Remove default styling on buttons to allow custom styling */
+button {
+  text-transform: uppercase;
+  text-decoration: none;
+  font: inherit;
+  outline: inherit;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

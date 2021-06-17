@@ -1,0 +1,64 @@
+/* ================================= 
+  ABOUT
+==================================== */
+#about-netmatters {
+  padding: 47px 15px 43px;
+  background-color: $colour-primary;
+  color: #fff;
+  font-size: .8125rem;
+  letter-spacing: .4px;
+  line-height: 1.375rem;
+  h4 {
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* Removes the whitespace margin on the last element as present on the parent wrapper */
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+#about-social-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6px;
+}
+
+.about-icon-container {
+  width: 150px;
+  height: 55px;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 55px;
+  background-color: #262834;
+  /* Adds whitespace between cards on rows */
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+  /* Adds whitespace above and below the 3rd and 4th cards */
+  &:nth-of-type(n+3) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+   /* UNUSED - Can adjust icons to more closely match originals but would need to be expanded for a case by case basis
+  span {
+    position: relative;
+    bottom: ;
+  } */
+}
+
+.about-wrapper {
+  margin-bottom: 30px;
+}
