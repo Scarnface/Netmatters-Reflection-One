@@ -6,6 +6,8 @@ $colour-primary: #333645;
 /* ================================= 
   IMPORTS
 ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 @import "partials/header";
 @import "partials/gallery";
 @import "partials/cards";
@@ -13,8 +15,6 @@ $colour-primary: #333645;
 @import "partials/news";
 @import "partials/newsletter";
 @import "partials/about";
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 /* ================================= 
   BASE STYLES
