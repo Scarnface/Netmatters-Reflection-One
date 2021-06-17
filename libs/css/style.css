@@ -50,6 +50,10 @@ button {
   /* Make the input field take an entire row */
 }
 
+#header img {
+  margin-top: 6px;
+}
+
 #header :last-child {
   grid-column: span 3;
   align-self: end;
@@ -59,6 +63,7 @@ button {
   margin-left: 15px;
   font-size: 32px;
   color: #333645;
+  /* Rotate to more closely match original icon */
   transform: rotate(-45deg);
 }
 
@@ -67,17 +72,22 @@ button {
   width: 63.0167px;
   margin-left: 20px;
   border-radius: 3px;
-  padding-bottom: 10px;
   font-size: .75rem;
   color: #fff;
   background-color: #333645;
   border-color: #191a22;
 }
 
+/* Position to more closely match original icon */
+#hamburger-title {
+  position: relative;
+  bottom: 2.5px;
+}
+
 #hamburger-bars {
   font-size: 32px;
   /* Scale to more closely match original icon */
-  transform: scaleY(0.65);
+  transform: scale(1.2, 0.8);
 }
 
 #search-container input, #search-container button {
@@ -88,7 +98,7 @@ button {
 }
 
 #search-container input {
-  width: 298.4px;
+  width: 295.9px;
   border-right: none;
   padding: 15px;
   color: #333;
@@ -102,7 +112,8 @@ button {
 #search-container button {
   font-size: 1.25em;
   border-left: none;
-  padding: 5px;
+  /* Right value to more closely match original icon position */
+  padding: 5px 7px 5px 5px;
 }
 
 /* ================================= 
@@ -156,9 +167,9 @@ button {
   CARDS
 ==================================== */
 #services-cards {
-  background-color: #fefefe;
+  background-color: #fdfdfd;
   max-width: 100%;
-  padding: 15px;
+  padding: 20px 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -305,7 +316,8 @@ button {
   border-color: #e0e0e0;
   border: 1px solid transparent;
   border-radius: 3px;
-  padding: 5px 15px;
+  /* Side values as icon breaks original button sizing */
+  padding: 5px 17.9px;
   font-size: 1.063rem;
   line-height: 35px;
 }
@@ -395,7 +407,7 @@ button {
 
 .news-card-info p {
   color: #666;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: .8125rem;
   letter-spacing: .4px;
   line-height: 1.375rem;
@@ -597,6 +609,11 @@ button {
   background-color: #262834;
   /* Adds whitespace between cards on rows */
   /* Adds whitespace above and below the 3rd and 4th cards */
+  /* UNUSED - Can adjust icons to more closely match originals but would need to be expanded for a case by case basis
+  span {
+    position: relative;
+    bottom: ;
+  } */
 }
 
 .about-icon-container:nth-child(odd) {
