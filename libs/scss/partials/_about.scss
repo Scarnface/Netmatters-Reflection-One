@@ -5,12 +5,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 47px 15px 43px;
+  padding: 47px 0 43px;
   background-color: $colour-primary;
   color: #fff;
   font-size: .8125rem;
   letter-spacing: .4px;
   line-height: 1.375rem;
+}
+
+.about-double-wrapper {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  /* Removes the whitespace margin on the last element */
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-single-wrapper {
+  width: 300px;
+  flex-grow: 1;
+  padding: 0 15px;
+  margin-bottom: 30px;
   h4 {
     margin-bottom: 26px;
     text-transform: uppercase;
@@ -43,26 +61,4 @@
   font-size: 1.75rem;
   line-height: 55px;
   background-color: #262834;
-/* UNUSED - Can adjust icons to more closely match originals but would need to be expanded for a case by case basis
-  span {
-    position: relative;
-    bottom: ;
-  } */
-}
-
-.about-single-wrapper {
-  width: 300px;
-  flex-grow: 1;
-  margin-bottom: 30px;
-}
-
-.about-double-wrapper {
-  width: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  /* Removes the whitespace margin on the last element */
-  :last-child {
-    margin-bottom: 0;
-  }
 }

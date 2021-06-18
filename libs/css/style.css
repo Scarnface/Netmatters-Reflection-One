@@ -534,7 +534,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 47px 15px 43px;
+  padding: 47px 0 43px;
   background-color: #333645;
   color: #fff;
   font-size: .8125rem;
@@ -542,7 +542,26 @@
   line-height: 1.375rem;
 }
 
-#about-netmatters h4 {
+.about-double-wrapper {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  /* Removes the whitespace margin on the last element */
+}
+
+.about-double-wrapper :last-child {
+  margin-bottom: 0;
+}
+
+.about-single-wrapper {
+  width: 300px;
+  flex-grow: 1;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.about-single-wrapper h4 {
   margin-bottom: 26px;
   text-transform: uppercase;
   font-size: 1rem;
@@ -550,12 +569,12 @@
   line-height: 1.1;
 }
 
-#about-netmatters a {
+.about-single-wrapper a {
   color: #fff;
   text-decoration: none;
 }
 
-#about-netmatters ul {
+.about-single-wrapper ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -575,29 +594,51 @@
   font-size: 1.75rem;
   line-height: 55px;
   background-color: #262834;
-  /* UNUSED - Can adjust icons to more closely match originals but would need to be expanded for a case by case basis
-  span {
-    position: relative;
-    bottom: ;
-  } */
 }
 
-.about-single-wrapper {
-  width: 300px;
-  flex-grow: 1;
-  margin-bottom: 30px;
+/* ================================================================== 
+  S - Small devices (phones, 768px and down)
+================================================================== */
+@media only screen and (max-width: 768px) {
+  /* ================================= 
+    CONTAINER
+  ==================================== */
+  .container {
+    width: 100%;
+  }
 }
 
-.about-double-wrapper {
-  width: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  /* Removes the whitespace margin on the last element */
+/* ================================================================== 
+  M - Medium devices (landscape tablets, 768px and up)
+================================================================== */
+@media only screen and (min-width: 768px) {
+  /* ================================= 
+    CONTAINER
+  ==================================== */
+  .container {
+    width: 750px;
+  }
 }
 
-.about-double-wrapper :last-child {
-  margin-bottom: 0;
+/* ================================================================== 
+  L - Large devices (laptops/desktops, 992px and up)
+================================================================== */
+@media only screen and (min-width: 992px) {
+  /* ================================= 
+    CONTAINER
+  ==================================== */
+  .container {
+    width: 970px;
+  }
+}
+
+/* ================================================================== 
+  XL - Extra large devices (large laptops and desktops, 1200px and up)
+================================================================== */
+@media only screen and (min-width: 1260px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* ================================= 
@@ -632,5 +673,13 @@ button {
   font: inherit;
   outline: inherit;
   cursor: pointer;
+}
+
+/* Sets the left and right site margin based on media breakpoints */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*# sourceMappingURL=style.css.map */
