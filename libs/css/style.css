@@ -540,6 +540,11 @@
   font-size: .8125rem;
   letter-spacing: .4px;
   line-height: 1.375rem;
+  /* Removes the bottom whitespace margin on the last single wrapper in single column mode */
+}
+
+#about-netmatters :nth-child(even) :last-child {
+  margin-bottom: 0;
 }
 
 .about-double-wrapper {
@@ -547,11 +552,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  /* Removes the whitespace margin on the last element */
-}
-
-.about-double-wrapper :last-child {
-  margin-bottom: 0;
 }
 
 .about-single-wrapper {
@@ -574,6 +574,10 @@
   text-decoration: none;
 }
 
+.about-single-wrapper a:hover {
+  text-decoration: underline;
+}
+
 .about-single-wrapper ul {
   list-style-type: none;
   padding: 0;
@@ -589,11 +593,37 @@
   padding: 6px 0 20px;
 }
 
-.about-icon-container {
+#about-icon-fb,
+#about-icon-tw,
+#about-icon-ig,
+#about-icon-li {
   text-align: center;
   font-size: 1.75rem;
   line-height: 55px;
   background-color: #262834;
+}
+
+#about-icon-fb:hover,
+#about-icon-tw:hover,
+#about-icon-ig:hover,
+#about-icon-li:hover {
+  cursor: pointer;
+}
+
+#about-icon-fb:hover {
+  background-color: #4267B2;
+}
+
+#about-icon-tw:hover {
+  background-color: #1DA1F2;
+}
+
+#about-icon-ig:hover {
+  background-color: #C13584;
+}
+
+#about-icon-li:hover {
+  background-color: #2867B2;
 }
 
 /* ================================================================== 

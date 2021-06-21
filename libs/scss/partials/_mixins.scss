@@ -1,0 +1,9 @@
+@mixin about-icon-container {
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 55px;
+  background-color: #262834;
+  &:hover {
+    cursor: pointer;
+  }
+}
