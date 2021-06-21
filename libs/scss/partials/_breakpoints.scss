@@ -44,6 +44,7 @@
 
   // CARDS
   .card {
+    height: 312px;
     &:nth-child(-n+3) {
       width: 370px;
     }

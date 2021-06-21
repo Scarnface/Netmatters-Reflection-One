@@ -823,6 +823,9 @@
   .container {
     width: 1200px;
   }
+  .card {
+    height: 312px;
+  }
   .card:nth-child(-n+3) {
     width: 370px;
   }
