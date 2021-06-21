@@ -37,12 +37,15 @@
     width: 1200px;
   }
 
-  //NEWSLETTER
-  .input-wrapper-double {
-    grid-template-columns: 1fr 1fr;
+  // CULTURE
+  #our-culture {
+    background-image: url("../img/branded.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
   }
 
-  //NEWS
+  // NEWS
   #news-card-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -51,5 +54,10 @@
     a {
       height: 48px;
     }
+  }
+
+  // NEWSLETTER
+  .input-wrapper-double {
+    grid-template-columns: 1fr 1fr;
   }
 }

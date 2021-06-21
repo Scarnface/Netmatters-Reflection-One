@@ -2,11 +2,14 @@
   CULTURE
 ==================================== */
 #our-culture {
-  margin-right: auto;
-  margin-left: auto;
+  background-color: $colour-primary;
+}
+
+#our-culture-wrapper {
+  width: 600px;
   padding: 50px 15px;
   line-height: 1.42857143;
-  background-color: $colour-primary;
+
   color: #fff;
   h1 {
     margin: -6px 0 28px;
@@ -35,5 +38,8 @@
     padding: 5px 17.9px;
     font-size: 1.063rem;
     line-height: 35px;
+    &:hover {
+      background-color: #ebebeb;
+    }
   }
 }
