@@ -1,0 +1,38 @@
+/* ================================= 
+  PARTNERS
+==================================== */
+#partners {
+  padding: 50px 0;
+}
+
+#partners-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 82px 58px;
+  grid-row-gap: 25px;
+}
+
+#partner-row-1,
+#partner-row-2 {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.partner-img {
+  position: relative;
+  display: inline-block;
+}
+.partner-img .partner-img-top {
+  flex: 1;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.partner-img:hover .partner-img-top {
+  display: inline;
+}
