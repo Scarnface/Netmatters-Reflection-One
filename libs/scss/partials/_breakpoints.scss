@@ -2,9 +2,7 @@
   S - Small devices (phones, 768px and down)
 ================================================================== */
 @media only screen and (max-width: 768px) {
-  /* ================================= 
-    CONTAINER
-  ==================================== */
+  // CONTAINER
   .container {
     width: 100%;
   }
@@ -14,9 +12,7 @@
   M - Medium devices (landscape tablets, 768px and up)
 ================================================================== */
 @media only screen and (min-width: 768px) {
-  /* ================================= 
-    CONTAINER
-  ==================================== */
+  // CONTAINER
   .container {
     width: 750px;
   }
@@ -26,9 +22,7 @@
   L - Large devices (laptops/desktops, 992px and up)
 ================================================================== */
 @media only screen and (min-width: 992px) {
-  /* ================================= 
-    CONTAINER
-  ==================================== */
+  // CONTAINER
   .container {
     width: 970px;
   }
@@ -38,7 +32,13 @@
   XL - Extra large devices (large laptops and desktops, 1200px and up)
 ================================================================== */
 @media only screen and (min-width: 1260px) {
+  // CONTAINER
   .container {
     width: 1200px;
+  }
+
+  //NEWSLETTER
+  .input-wrapper-double {
+    grid-template-columns: 1fr 1fr;
   }
 }

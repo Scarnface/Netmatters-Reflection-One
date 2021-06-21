@@ -3,8 +3,13 @@
 ==================================== */
 #newsletter {
   background-color: #dddddd;
-  padding: 50px 45px;
+  padding: 50px 0;
   color: $colour-primary;
+}
+
+#newsletter-form {
+  padding-left: 45px;
+  padding-right: 45px;
   h2 {
     margin: 0 0 15px;
     font-size: 2rem;
@@ -22,12 +27,6 @@
     span {
       color: crimson;
     }
-  }
-  #newsletter-name, #newsletter-email {
-    height: 47px;
-    width: 100%;
-    margin: 0 0 15px;
-    border: solid 1px #d3d3d3;
   }
   p {
     overflow: hidden;
@@ -110,4 +109,25 @@
   border: solid white;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+}
+
+.input-wrapper-double {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 30px;
+}
+
+.input-wrapper-single {
+  input {
+    height: 47px;
+    width: 100%;
+    margin: 0 0 15px;
+    border: solid 1px #d3d3d3;
+    outline: inherit;
+    transition : border .15s ease-in;
+    &:focus {
+      border: solid 1px #87ceeb;
+    }
+  }
 }

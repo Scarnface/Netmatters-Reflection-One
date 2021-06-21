@@ -7,6 +7,9 @@
 ==================================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 /* ================================= 
+  ABOUT
+==================================== */
+/* ================================= 
   HEADER
 ==================================== */
 #header {
@@ -411,11 +414,16 @@
 ==================================== */
 #newsletter {
   background-color: #dddddd;
-  padding: 50px 45px;
+  padding: 50px 0;
   color: #333645;
 }
 
-#newsletter h2 {
+#newsletter-form {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#newsletter-form h2 {
   margin: 0 0 15px;
   font-size: 2rem;
   font-weight: 400;
@@ -423,7 +431,7 @@
   line-height: 1.1;
 }
 
-#newsletter label {
+#newsletter-form label {
   display: inline-block;
   margin-bottom: 5px;
   font-size: 1rem;
@@ -432,18 +440,11 @@
   line-height: 1.42857143;
 }
 
-#newsletter label span {
+#newsletter-form label span {
   color: crimson;
 }
 
-#newsletter #newsletter-name, #newsletter #newsletter-email {
-  height: 47px;
-  width: 100%;
-  margin: 0 0 15px;
-  border: solid 1px #d3d3d3;
-}
-
-#newsletter p {
+#newsletter-form p {
   overflow: hidden;
   line-height: 32px;
   font-weight: 600;
@@ -451,11 +452,11 @@
   letter-spacing: .4px;
 }
 
-#newsletter p a {
+#newsletter-form p a {
   color: #333645;
 }
 
-#newsletter button {
+#newsletter-form button {
   color: #fff;
   background-color: #333645;
   margin-top: 30px;
@@ -525,6 +526,26 @@
   border: solid white;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+}
+
+.input-wrapper-double {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 30px;
+}
+
+.input-wrapper-single input {
+  height: 47px;
+  width: 100%;
+  margin: 0 0 15px;
+  border: solid 1px #d3d3d3;
+  outline: inherit;
+  transition: border .15s ease-in;
+}
+
+.input-wrapper-single input:focus {
+  border: solid 1px #87ceeb;
 }
 
 /* ================================= 
@@ -630,9 +651,6 @@
   S - Small devices (phones, 768px and down)
 ================================================================== */
 @media only screen and (max-width: 768px) {
-  /* ================================= 
-    CONTAINER
-  ==================================== */
   .container {
     width: 100%;
   }
@@ -642,9 +660,6 @@
   M - Medium devices (landscape tablets, 768px and up)
 ================================================================== */
 @media only screen and (min-width: 768px) {
-  /* ================================= 
-    CONTAINER
-  ==================================== */
   .container {
     width: 750px;
   }
@@ -654,9 +669,6 @@
   L - Large devices (laptops/desktops, 992px and up)
 ================================================================== */
 @media only screen and (min-width: 992px) {
-  /* ================================= 
-    CONTAINER
-  ==================================== */
   .container {
     width: 970px;
   }
@@ -668,6 +680,9 @@
 @media only screen and (min-width: 1260px) {
   .container {
     width: 1200px;
+  }
+  .input-wrapper-double {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
