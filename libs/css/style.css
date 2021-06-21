@@ -320,15 +320,37 @@
 }
 
 #news-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px 15px 20px;
   background-color: #f9f9f9;
+}
+
+#news-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 30px;
+  padding: 50px 15px 20px;
+}
+
+.news-card {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: solid 1px #d3d3d3;
 }
 
 .news-image-container {
   position: relative;
+  overflow: hidden;
+}
+
+.news-image-container img {
+  display: block;
+  transition: all .5s ease;
+}
+
+.news-image-container img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 /* The small news category button over images */
@@ -346,22 +368,6 @@
   z-index: 1;
 }
 
-.news-card {
-  width: 370px;
-  background-color: #fff;
-  margin-bottom: 30px;
-  border: solid 1px #d3d3d3;
-}
-
-/* The horizontal line between elements */
-.card-divider {
-  width: 270px;
-  height: 0px;
-  margin-top: 30px;
-  border-top: 1px solid #ccc;
-  padding-top: 30px;
-}
-
 .news-card-info {
   padding: 30px 30px 0;
 }
@@ -377,9 +383,13 @@
   letter-spacing: .4px;
 }
 
+.news-card-info a:hover {
+  text-decoration: underline;
+}
+
 .news-card-info p {
+  margin-bottom: 25px;
   color: #666;
-  margin-bottom: 30px;
   font-size: .8125rem;
   letter-spacing: .4px;
   line-height: 1.375rem;
@@ -388,7 +398,6 @@
 .news-card-info button {
   color: #fff;
   background-color: #4183d7;
-  margin-top: auto;
   border: solid 1px transparent;
   border-radius: 3px;
   padding: 5px 15px;
@@ -407,6 +416,15 @@
 
 .news-card-info footer p {
   padding-left: 20px;
+}
+
+/* The horizontal line between elements */
+.card-divider {
+  width: 270px;
+  height: 0px;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
 }
 
 /* ================================= 
@@ -683,6 +701,12 @@
   }
   .input-wrapper-double {
     grid-template-columns: 1fr 1fr;
+  }
+  #news-card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .news-card-info a {
+    height: 48px;
   }
 }
 

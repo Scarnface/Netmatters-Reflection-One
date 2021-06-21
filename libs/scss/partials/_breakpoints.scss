@@ -41,4 +41,15 @@
   .input-wrapper-double {
     grid-template-columns: 1fr 1fr;
   }
+
+  //NEWS
+  #news-card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .news-card-info {
+    a {
+      height: 48px;
+    }
+  }
 }
