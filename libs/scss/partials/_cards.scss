@@ -3,6 +3,9 @@
 ==================================== */
 #services-cards {
   background-color: #fdfdfd;
+}
+
+#cards-wrapper {
   max-width: 100%;
   padding: 20px 15px;
   display: flex;
@@ -68,54 +71,36 @@
     font-size: 1.063rem;
     line-height: 35px;
   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-/* Set the colours of each card. Inverts colours on hover at higher breakpoints */
+/* Set the colours of each card. Inverts colours on hover */
 #card-one {
-  p.card-icon, button {
-    color: #fff;
-    background-color: #67809f;
-  }
+  @include card-colours(#67809f);
 }
 
 #card-two {
-  p.card-icon, button {
-    color: #fff;
-    background-color: #4183d7;
-  }
+  @include card-colours(#4183d7);
 }
 
 #card-three {
-  p.card-icon, button {
-    color: #fff;
-    background-color: #2ecc71;
-  }
+  @include card-colours(#2ecc71);
 }
 
 #card-four {
-  p.card-icon, button {
-    color: #fff;
-    background-color: #d64541;
-  }
+  @include card-colours(#d64541);
 }
 
 #card-five {
-  p.card-icon, button {
-    color: #fff;
-    background-color: #926fb1;
-  }
+  @include card-colours(#926fb1);
 }
 
 #card-six {
-  p.card-icon, button {
-    color: #fff;
-    background-color: #f62459;
-  }
+  @include card-colours(#f62459);
 }
 
 #card-seven {
-  p.card-icon, button {
-    color: #fff;
-    background-color: #926fb1;
-  }
+  @include card-colours(#926fb1);
 }

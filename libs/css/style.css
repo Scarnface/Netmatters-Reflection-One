@@ -7,9 +7,6 @@
 ==================================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 /* ================================= 
-  ABOUT
-==================================== */
-/* ================================= 
   HEADER
 ==================================== */
 #header {
@@ -140,6 +137,9 @@
 ==================================== */
 #services-cards {
   background-color: #fdfdfd;
+}
+
+#cards-wrapper {
   max-width: 100%;
   padding: 20px 15px;
   display: flex;
@@ -214,8 +214,22 @@
   line-height: 35px;
 }
 
-/* Set the colours of each card. Inverts colours on hover at higher breakpoints */
+.card:hover {
+  cursor: pointer;
+}
+
+/* Set the colours of each card. Inverts colours on hover */
 #card-one p.card-icon, #card-one button {
+  color: #fff;
+  background-color: #67809f;
+}
+
+#card-one:hover p.card-icon, #card-one:hover button {
+  color: #67809f;
+  background-color: #fff;
+}
+
+#card-one:hover.card {
   color: #fff;
   background-color: #67809f;
 }
@@ -225,7 +239,27 @@
   background-color: #4183d7;
 }
 
+#card-two:hover p.card-icon, #card-two:hover button {
+  color: #4183d7;
+  background-color: #fff;
+}
+
+#card-two:hover.card {
+  color: #fff;
+  background-color: #4183d7;
+}
+
 #card-three p.card-icon, #card-three button {
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+#card-three:hover p.card-icon, #card-three:hover button {
+  color: #2ecc71;
+  background-color: #fff;
+}
+
+#card-three:hover.card {
   color: #fff;
   background-color: #2ecc71;
 }
@@ -235,7 +269,27 @@
   background-color: #d64541;
 }
 
+#card-four:hover p.card-icon, #card-four:hover button {
+  color: #d64541;
+  background-color: #fff;
+}
+
+#card-four:hover.card {
+  color: #fff;
+  background-color: #d64541;
+}
+
 #card-five p.card-icon, #card-five button {
+  color: #fff;
+  background-color: #926fb1;
+}
+
+#card-five:hover p.card-icon, #card-five:hover button {
+  color: #926fb1;
+  background-color: #fff;
+}
+
+#card-five:hover.card {
   color: #fff;
   background-color: #926fb1;
 }
@@ -245,7 +299,27 @@
   background-color: #f62459;
 }
 
+#card-six:hover p.card-icon, #card-six:hover button {
+  color: #f62459;
+  background-color: #fff;
+}
+
+#card-six:hover.card {
+  color: #fff;
+  background-color: #f62459;
+}
+
 #card-seven p.card-icon, #card-seven button {
+  color: #fff;
+  background-color: #926fb1;
+}
+
+#card-seven:hover p.card-icon, #card-seven:hover button {
+  color: #926fb1;
+  background-color: #fff;
+}
+
+#card-seven:hover.card {
   color: #fff;
   background-color: #926fb1;
 }
@@ -704,6 +778,12 @@
 @media only screen and (min-width: 1260px) {
   .container {
     width: 1200px;
+  }
+  .card:nth-child(-n+3) {
+    width: 370px;
+  }
+  .card:nth-child(n+4) {
+    width: 270px;
   }
   #our-culture {
     background-image: url("../img/branded.png");

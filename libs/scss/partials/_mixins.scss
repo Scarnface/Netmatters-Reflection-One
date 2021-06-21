@@ -1,6 +1,22 @@
-/* ================================= 
-  ABOUT
-==================================== */
+// CARDS
+@mixin card-colours($secondary) {
+  p.card-icon, button {
+    color: #fff;
+    background-color: $secondary;
+  }
+  &:hover {
+    p.card-icon, button {
+      color: $secondary;
+      background-color: #fff;
+    }
+    &.card {
+      color: #fff;
+      background-color: $secondary;
+    }
+  }
+}
+
+// ABOUT
 @mixin about-icon-container {
   text-align: center;
   font-size: 1.75rem;

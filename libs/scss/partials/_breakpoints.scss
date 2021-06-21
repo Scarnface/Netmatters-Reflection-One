@@ -37,6 +37,16 @@
     width: 1200px;
   }
 
+  // CARDS
+  .card {
+    &:nth-child(-n+3) {
+      width: 370px;
+    }
+    &:nth-child(n+4) {
+      width: 270px;
+    }
+  }
+
   // CULTURE
   #our-culture {
     background-image: url("../img/branded.png");
