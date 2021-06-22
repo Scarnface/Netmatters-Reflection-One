@@ -25,6 +25,7 @@
   position: relative;
   display: inline-block;
 }
+
 .partner-img .partner-img-top {
   flex: 1;
   display: none;
@@ -33,6 +34,7 @@
   left: 0;
   z-index: 99;
 }
+
 .partner-img:hover .partner-img-top {
   display: inline;
 }
