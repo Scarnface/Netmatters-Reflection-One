@@ -1,12 +1,12 @@
 /* ================================= 
   PARTNERS
 ==================================== */
-#clients {
+.clients {
   padding: 50px 0;
   background: linear-gradient(to bottom, #E8E8E8, #fff 25%);
 }
 
-#clients-wrapper {
+.clients-wrapper {
   width: 100%;
   padding: 0 15px;
   display: flex;
@@ -65,7 +65,7 @@
   }
 }
 
-/* The triangle under the client description */
+// The triangle under the client description
 .triangle-down {
   position: absolute;
   z-index: 1;
@@ -80,7 +80,7 @@
   transform: scale(.8, .35);
 }
 
-/* The horizontal line between elements */
+// The horizontal line between elements
 .info-divider {
   width: 30px;
   height: 0px;

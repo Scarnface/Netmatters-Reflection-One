@@ -1,13 +1,13 @@
 /* ================================= 
   NEWS
 ==================================== */
-#news-title-wrapper {
+.news-title-wrapper {
   padding: 0 15px;
   width: 360px;
   height: 104px;
 }
 
-#news-title-container {
+.news-title-container {
   width: 71.7833px;
   height: 104px;
   border-bottom: 6px solid $colour-primary;
@@ -22,11 +22,11 @@
   }
 }
 
-#news-card-container {
+.news-card-container {
   background: linear-gradient(to bottom, #E8E8E8, #fff 4%);
 }
 
-#news-card-wrapper {
+.news-card-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -35,6 +35,7 @@
 }
 
 .news-card {
+  min-width: 330px;
   background-color: #fff;
   margin-bottom: 30px;
   border: solid 1px #d3d3d3;
@@ -54,7 +55,7 @@
   }
 }
 
-/* The small news category button over images */
+// The small news category button over images
 .card-overlay-button {
   position: absolute;
   top: 10px;
@@ -112,7 +113,7 @@
   }
 }
 
-/* The horizontal line between elements */
+// The horizontal line between elements
 .card-divider {
   width: 270px;
   height: 0px;

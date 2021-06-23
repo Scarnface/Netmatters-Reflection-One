@@ -2,7 +2,7 @@
   GALLERY
 ==================================== */
 .gallery-image {
-  /* Darken Image to make text easier to read */
+  // Darken Image to make text easier to read
   background-image: linear-gradient(to right, #000000ff, #00000060), url("../img/home-lQs1.jpg");
   height: 571.2px;
   background-position: center;
@@ -13,7 +13,7 @@
 .gallery-text {
   color: #fff;
   min-width: 100%;
-  /* Draw text over image */
+  // Draw text over image
   text-align: center;
   position: absolute;
   top: 50%;

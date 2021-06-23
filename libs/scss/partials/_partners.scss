@@ -1,11 +1,11 @@
 /* ================================= 
   PARTNERS
 ==================================== */
-#partners {
+.partners {
   padding: 50px 0;
 }
 
-#partners-wrapper {
+.partners-wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
@@ -13,8 +13,8 @@
   grid-row-gap: 25px;
 }
 
-#partner-row-1,
-#partner-row-2 {
+.partner-row-1,
+.partner-row-2 {
   padding: 0 15px;
   display: flex;
   flex-direction: row;

@@ -1,97 +1,33 @@
 /* ================================= 
   HEADER
 ==================================== */
-#header-wrapper {
+.header-wrapper {
   width: 100%;
   padding: 20px 15px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px 58px;
   align-items: center;
-  /* Make the input field take an entire row */
-  :last-child {
-    grid-column: span 3;
-    align-self: end;
-  }
 }
 
-#header-row-1,
-#header-row-2 {
-  display: flex;
-  align-items: center;
-  // Positions the phone icon correctly as rotated and floats the rest of the row right.
-  a:nth-of-type(2) {
-    margin-left: auto;
-    min-width: 47.4px;
-    padding-bottom: 5px;
-
-  }
-  img {
-    flex: 1 1 199.583px;
-    margin-top: 6px;
-  }
+// Hide all elements initially
+.header-row-1,
+.header-row-1:nth-child(2),
+.header-row-2 {
+  display: none;
 }
 
-#header-phone {
-  flex: 0 0 auto;
-  margin-left: 20px;
-  font-size: 32px;
-  color: $colour-primary;
-  /* Rotate to more closely match original icon */
-  transform: rotate(-45deg);
+// Load and display the required items for each breakpoint header
+@mixin header-v1 {
+  @include header-row-1;
+  @include header-row-2;
+  @include header-phone;
+  @include header-hamburger;
+  @include header-search-big;
 }
 
-#hamburger-button {
-  flex: 0 0 63.0167px;
-  height: 56px;
-  margin-left: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-radius: 3px;
-  font-size: .75rem;
-  color: #fff;
-  background-color: $colour-primary;
-  border-color: #191a22;
-}
-
-/* Position to more closely match original icon */
-#hamburger-title {
-  position: relative;
-  bottom: 2.5px;
-}
-
-#hamburger-bars {
-  font-size: 32px;
-  /* Scale to more closely match original icon */
-  transform: scale(1.2, 0.8);
-}
-
-#search-container {
-  display: flex;
-  flex-grow: 1;
-  input, button {
-    height: 47px;
-    border: solid 2px #cecece;
-    background-color: #e5e5e5;
-  }
-  input {
-    min-width: 0;
-    flex: 1;
-    border-right: none;
-    border-radius: 2px 0 0 2px;
-    padding: 15px;
-    color: #333;
-    font: inherit;
-    outline: inherit;
-    font-size: 14px;
-    line-height: 1.42857143;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  }
-  button {
-    font-size: 1.25em;
-    border-left: none;
-    border-radius: 0 2px 2px 0;
-    /* Right value to more closely match original icon position */
-    padding: 5px 7px 5px 5px;
-  }
+@mixin header-v2 {
+  @include header-row-1;
+  @include header-hamburger;
+  @include header-search-big;
 }

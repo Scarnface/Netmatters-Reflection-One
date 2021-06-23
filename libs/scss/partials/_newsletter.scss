@@ -1,13 +1,13 @@
 /* ================================= 
   NEWSLETTER
 ==================================== */
-#newsletter {
+.newsletter {
   background-color: #dddddd;
   padding: 50px 0;
   color: $colour-primary;
 }
 
-#newsletter-form {
+.newsletter-form {
   padding-left: 45px;
   padding-right: 45px;
   h2 {
@@ -50,8 +50,8 @@
   }
 }
 
-/* The container */
-#checkbox-container {
+// The container
+.checkbox-container {
   display: block;
   position: relative;
   float: left;
@@ -62,8 +62,8 @@
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
-#checkbox-container input {
+// Hide the browser's default checkbox
+.checkbox-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -71,8 +71,8 @@
   width: 0;
 }
 
-/* Create a custom checkbox */
-#checkbox-checkmark {
+// Create a custom checkbox
+.checkbox-checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,25 +83,25 @@
   border: 3px solid $colour-primary;
 }
 
-/* When the checkbox is checked, add corporate coloured background */
-#checkbox-container input:checked ~ #checkbox-checkmark {
+// When the checkbox is checked, add corporate coloured background
+.checkbox-container input:checked ~ .checkbox-checkmark {
   background-color: $colour-primary;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-#checkbox-checkmark:after {
+// Create the checkmark/indicator (hidden when not checked)
+.checkbox-checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
-#checkbox-container input:checked ~ #checkbox-checkmark:after {
+// Show the checkmark when checked
+.checkbox-container input:checked ~ .checkbox-checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
-#checkbox-container #checkbox-checkmark:after {
+// Style the checkmark/indicator
+.checkbox-container .checkbox-checkmark:after {
   left: 9px;
   top: 4px;
   width: 7px;

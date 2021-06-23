@@ -1,11 +1,11 @@
 /* ================================= 
   CARDS
 ==================================== */
-#services-cards {
+.services-cards {
   background-color: #fdfdfd;
 }
 
-#cards-wrapper {
+.cards-wrapper {
   max-width: 100%;
   padding: 20px 15px;
   display: flex;
@@ -34,7 +34,7 @@
     margin: 0 0 8.2px;
     line-height: 1.1;
     letter-spacing: .4px;
-    /* Add the short horizontal line between elements */
+    // Add the short horizontal line between elements
     &::after {
       font-family: Arial, Helvetica, sans-serif;
       content: "——";
@@ -77,7 +77,7 @@
   }
 }
 
-/* Set the colours of each card. Inverts colours on hover */
+// Set the colours of each card. Inverts colours on hover
 #card-one {
   @include card-colours(#67809f);
 }

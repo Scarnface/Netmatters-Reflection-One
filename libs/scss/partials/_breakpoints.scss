@@ -1,15 +1,20 @@
 /* ================================================================== 
   S - Small devices (phones, 768px and down)
 ================================================================== */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  //HEADER
+  .header-wrapper {
+    @include header-v1;
+  }
+
   // CONTAINER
   .container {
     width: 100%;
   }
 
   // PARTNERS / CLIENTS
-  #partners,
-  #clients {
+  .partners,
+  .clients {
     display: none;
   }
 }
@@ -18,6 +23,17 @@
   M - Medium devices (landscape tablets, 768px and up)
 ================================================================== */
 @media only screen and (min-width: 768px) {
+  //HEADER
+  .header-wrapper {
+    grid-template-rows: 1fr;
+    @include header-v2;
+  }
+
+  body #logo-img {
+      max-width: 345px;
+      margin-top: 0;
+  }
+
   // CONTAINER
   .container {
     width: 750px;
@@ -28,6 +44,11 @@
   L - Large devices (laptops/desktops, 992px and up)
 ================================================================== */
 @media only screen and (min-width: 992px) {
+  //HEADER
+  .header-wrapper {
+    @include header-v1;
+  }
+
   // CONTAINER
   .container {
     width: 970px;
@@ -38,6 +59,11 @@
   XL - Extra large devices (large laptops and desktops, 1200px and up)
 ================================================================== */
 @media only screen and (min-width: 1260px) {
+  //HEADER
+  .header-wrapper {
+    @include header-v1;
+  }
+  
   // CONTAINER
   .container {
     width: 1200px;
@@ -55,7 +81,7 @@
   }
 
   // CULTURE
-  #our-culture {
+  .our-culture {
     background-image: url("../img/branded.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -63,7 +89,7 @@
   }
 
   // NEWS
-  #news-card-wrapper {
+  .news-card-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
 

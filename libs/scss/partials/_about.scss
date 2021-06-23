@@ -1,7 +1,7 @@
 /* ================================= 
   ABOUT
 ==================================== */
-#about-netmatters {
+.about-netmatters {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,7 +11,7 @@
   font-size: .8125rem;
   letter-spacing: .4px;
   line-height: 1.375rem;
-  /* Removes the bottom whitespace margin on the last single wrapper in single column mode */
+  // Removes the bottom whitespace margin on the last single wrapper in single column mode
   :nth-child(even) :last-child {
     margin-bottom: 0;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-#about-social-container {
+.about-social-container {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -59,25 +59,25 @@
   padding: 6px 0 20px;
 }
 
-#about-icon-fb,
-#about-icon-tw,
-#about-icon-ig,
-#about-icon-li {
+.about-icon-fb,
+.about-icon-tw,
+.about-icon-ig,
+.about-icon-li {
   @include about-icon-container;
 }
 
-#about-icon-fb:hover {
+.about-icon-fb:hover {
   background-color: #4267B2;
 }
 
-#about-icon-tw:hover {
+.about-icon-tw:hover {
   background-color: #1DA1F2;
 }
 
-#about-icon-ig:hover {
+.about-icon-ig:hover {
   background-color:  #C13584;
 }
 
-#about-icon-li:hover {
+.about-icon-li:hover {
   background-color: #2867B2;
 }

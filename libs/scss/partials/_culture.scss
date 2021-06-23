@@ -1,11 +1,11 @@
 /* ================================= 
   CULTURE
 ==================================== */
-#our-culture {
+.our-culture {
   background-color: $colour-primary;
 }
 
-#our-culture-wrapper {
+.our-culture-wrapper {
   width: 600px;
   padding: 50px 15px;
   line-height: 1.42857143;
@@ -34,7 +34,7 @@
     border-color: #e0e0e0;
     border: 1px solid transparent;
     border-radius: 3px;
-    /* Side values as icon breaks original button sizing */
+    // Side values as icon breaks original button sizing
     padding: 5px 17.9px;
     font-size: 1.063rem;
     line-height: 35px;
