@@ -12,7 +12,8 @@
 
 // Hide all elements initially
 .header-row-1,
-.header-row-2 {
+.header-row-2,
+.header-button {
   display: none;
 }
 
@@ -29,4 +30,12 @@
   @include header-row-1;
   @include header-search-small;
   @include header-hamburger;
+}
+
+@mixin header-v3 {
+  @include header-row-1;
+  @include header-row-3;
+  @include header-search-small;
+  @include header-hamburger;
+  @include header-buttons;
 }

@@ -58,7 +58,31 @@
 @media only screen and (min-width: 992px) {
   //HEADER
   .header-wrapper {
-    @include header-v1;
+    @include header-v3;
+  }
+
+  #logo-img {
+    max-width: 374.167px;
+    margin-top: 0;
+}
+
+  #header-phone {
+    display: none;
+  }
+
+  #contact-button,
+  #support-button {
+    display: inline-block;
+  }
+
+  #search-small {
+    max-width: 64px;
+    & input {
+      display: none;
+    }
+    & button {
+      border-radius: 3px;
+    }
   }
 
   // CONTAINER

@@ -19,7 +19,8 @@
 }
 
 .header-row-1,
-.header-row-2 {
+.header-row-2,
+.header-button {
   display: none;
 }
 
@@ -846,6 +847,9 @@
     background-color: #333645;
     border-color: #191a22;
   }
+  .header-wrapper .hamburger-button:hover {
+    background-color: #22242e;
+  }
   .header-wrapper #hamburger-title {
     position: relative;
     bottom: 2.5px;
@@ -955,6 +959,9 @@
     padding: 10px 20px;
     font-size: 1.45em;
   }
+  .header-wrapper .search-container button:hover {
+    background-color: #7e808a;
+  }
   .header-wrapper .hamburger-button {
     flex: 0 0 63.0167px;
     height: 56px;
@@ -966,6 +973,9 @@
     color: #fff;
     background-color: #333645;
     border-color: #191a22;
+  }
+  .header-wrapper .hamburger-button:hover {
+    background-color: #22242e;
   }
   .header-wrapper #hamburger-title {
     position: relative;
@@ -1008,40 +1018,6 @@
     display: block;
     flex: 1 1 199.583px;
   }
-  .header-wrapper .header-row-2 {
-    margin-top: 11px;
-    display: flex;
-    align-items: center;
-    grid-column: span 3;
-    align-self: end;
-  }
-  .header-wrapper #header-phone {
-    flex: 0 0 auto;
-    margin-left: 20px;
-    font-size: 32px;
-    color: #333645;
-    transform: rotate(-45deg);
-  }
-  .header-wrapper .hamburger-button {
-    flex: 0 0 63.0167px;
-    height: 56px;
-    margin-left: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 3px;
-    font-size: .75rem;
-    color: #fff;
-    background-color: #333645;
-    border-color: #191a22;
-  }
-  .header-wrapper #hamburger-title {
-    position: relative;
-    bottom: 2.5px;
-  }
-  .header-wrapper #hamburger-bars {
-    font-size: 32px;
-    transform: scale(1.2, 0.8);
-  }
   .header-wrapper .search-container {
     display: flex;
     flex-grow: 1;
@@ -1058,21 +1034,96 @@
   .header-wrapper .search-container button {
     font-size: 1.25em;
   }
+  .header-wrapper .search-container {
+    max-width: 237px;
+  }
   .header-wrapper .search-container input, .header-wrapper .search-container button {
-    height: 47px;
-    border: solid 2px #cecece;
-    background-color: #e5e5e5;
+    height: 56px;
+    border: solid 1px #999aa2;
   }
   .header-wrapper .search-container input {
     border-right: none;
-    border-radius: 2px 0 0 2px;
+    border-radius: 1px 0 0 1px;
     color: #333;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   }
   .header-wrapper .search-container button {
+    color: #fff;
+    background-color: #999aa2;
     border-left: none;
-    border-radius: 0 2px 2px 0;
-    padding: 5px 7px 5px 5px;
+    border-radius: 0 3px 3px 0;
+    padding: 10px 20px;
+    font-size: 1.45em;
+  }
+  .header-wrapper .search-container button:hover {
+    background-color: #7e808a;
+  }
+  .header-wrapper .hamburger-button {
+    flex: 0 0 63.0167px;
+    height: 56px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+    font-size: .75rem;
+    color: #fff;
+    background-color: #333645;
+    border-color: #191a22;
+  }
+  .header-wrapper .hamburger-button:hover {
+    background-color: #22242e;
+  }
+  .header-wrapper #hamburger-title {
+    position: relative;
+    bottom: 2.5px;
+  }
+  .header-wrapper #hamburger-bars {
+    font-size: 32px;
+    transform: scale(1.2, 0.8);
+  }
+  .header-wrapper .header-button {
+    color: #fff;
+    height: 56px;
+    margin-right: 20px;
+    border: solid 1px transparent;
+    border-radius: 3px;
+    padding: 5px 15px;
+    font-size: 1.125rem;
+    letter-spacing: .4px;
+    line-height: 46px;
+  }
+  .header-wrapper .header-button:nth-of-type(1) {
+    min-width: 136.183px;
+    background-color: #4183d7;
+  }
+  .header-wrapper .header-button:nth-of-type(1):hover {
+    background-color: #2a6ec6;
+  }
+  .header-wrapper .header-button:nth-of-type(2) {
+    min-width: 144px;
+    background-color: #999aa2;
+  }
+  .header-wrapper .header-button:nth-of-type(2):hover {
+    background-color: #7e808a;
+  }
+  #logo-img {
+    max-width: 374.167px;
+    margin-top: 0;
+  }
+  #header-phone {
+    display: none;
+  }
+  #contact-button,
+  #support-button {
+    display: inline-block;
+  }
+  #search-small {
+    max-width: 64px;
+  }
+  #search-small input {
+    display: none;
+  }
+  #search-small button {
+    border-radius: 3px;
   }
   .container {
     width: 970px;
@@ -1122,6 +1173,9 @@
     color: #fff;
     background-color: #333645;
     border-color: #191a22;
+  }
+  .header-wrapper .hamburger-button:hover {
+    background-color: #22242e;
   }
   .header-wrapper #hamburger-title {
     position: relative;
