@@ -12,7 +12,6 @@
 
 // Hide all elements initially
 .header-row-1,
-.header-row-1:nth-child(2),
 .header-row-2 {
   display: none;
 }
@@ -28,6 +27,6 @@
 
 @mixin header-v2 {
   @include header-row-1;
+  @include header-search-small;
   @include header-hamburger;
-  @include header-search-big;
 }
