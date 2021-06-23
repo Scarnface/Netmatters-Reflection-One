@@ -1,16 +1,13 @@
 /* ================================= 
   HEADER
 ==================================== */
-#header {
+#header-wrapper {
+  width: 100%;
   padding: 20px 15px;
   display: grid;
-  grid-template-columns: 199.583px 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 70px 58px;
   align-items: center;
-  justify-items: center;
-  img {
-    margin-top: 6px;
-  }
   /* Make the input field take an entire row */
   :last-child {
     grid-column: span 3;
@@ -18,8 +15,26 @@
   }
 }
 
+#header-row-1,
+#header-row-2 {
+  display: flex;
+  align-items: center;
+  // Positions the phone icon correctly as rotated and floats the rest of the row right.
+  a:nth-of-type(2) {
+    margin-left: auto;
+    min-width: 47.4px;
+    padding-bottom: 5px;
+
+  }
+  img {
+    flex: 1 1 199.583px;
+    margin-top: 6px;
+  }
+}
+
 #header-phone {
-  margin-left: 15px;
+  flex: 0 0 auto;
+  margin-left: 20px;
   font-size: 32px;
   color: $colour-primary;
   /* Rotate to more closely match original icon */
@@ -27,9 +42,11 @@
 }
 
 #hamburger-button {
+  flex: 0 0 63.0167px;
   height: 56px;
-  width: 63.0167px;
   margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
   border-radius: 3px;
   font-size: .75rem;
   color: #fff;
@@ -50,15 +67,18 @@
 }
 
 #search-container {
+  display: flex;
+  flex-grow: 1;
   input, button {
     height: 47px;
-    float:left;
     border: solid 2px #cecece;
     background-color: #e5e5e5;
   }
   input {
-    width: 295.9px;
+    min-width: 0;
+    flex: 1;
     border-right: none;
+    border-radius: 2px 0 0 2px;
     padding: 15px;
     color: #333;
     font: inherit;
@@ -70,6 +90,7 @@
   button {
     font-size: 1.25em;
     border-left: none;
+    border-radius: 0 2px 2px 0;
     /* Right value to more closely match original icon position */
     padding: 5px 7px 5px 5px;
   }
