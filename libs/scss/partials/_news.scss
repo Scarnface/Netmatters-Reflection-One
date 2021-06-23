@@ -35,7 +35,7 @@
 }
 
 .news-card {
-  min-width: 330px;
+  width: 100%;
   background-color: #fff;
   margin-bottom: 30px;
   border: solid 1px #d3d3d3;
@@ -45,6 +45,7 @@
   position: relative;
   overflow: hidden;
   img {
+    width: 100%;
     display: block;
     transition: all .5s ease;
     &:hover {
@@ -100,6 +101,9 @@
     padding: 5px 15px;
     font-size: 1.063rem;
     line-height: 35px;
+    &:hover {
+      background-color: #2a6ec6;
+    }
   }
   footer {
     display: flex;
@@ -115,7 +119,7 @@
 
 // The horizontal line between elements
 .card-divider {
-  width: 270px;
+  width: 100%;
   height: 0px;
   margin-top: 30px;
   border-top: 1px solid #ccc;

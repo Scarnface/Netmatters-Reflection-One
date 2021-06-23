@@ -2,6 +2,11 @@
   S - Small devices (phones, 768px and down)
 ================================================================== */
 @media only screen and (max-width: 767px) {
+  // CONTAINER
+  .container {
+    width: 100%;
+  }
+
   //HEADER
   .header-wrapper {
     @include header-v1;
@@ -9,11 +14,6 @@
 
   #search-small {
     display: none;
-  }
-
-  // CONTAINER
-  .container {
-    width: 100%;
   }
 
   // PARTNERS / CLIENTS
@@ -27,6 +27,11 @@
   M - Medium devices (landscape tablets, 768px and up)
 ================================================================== */
 @media only screen and (min-width: 768px) {
+  // CONTAINER
+  .container {
+    width: 750px;
+  }
+  
   //HEADER
   .header-wrapper {
     grid-template-rows: 1fr;
@@ -46,9 +51,34 @@
     display: none;
   }
 
-  // CONTAINER
-  .container {
-    width: 750px;
+  // CARDS
+  .card {
+    &:nth-child(-n+3) {
+      width: 750px;
+      height: 290px;
+    }
+    &:nth-child(n+4) {
+      width: 345px;
+      height: 312px;
+    }
+  }
+
+  // NEWS
+  .news-card:last-of-type {
+    display: none;
+  }
+
+  .news-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news-card-info {
+    a {
+      height: 48px;
+    }
+    p {
+      height: 66px;
+    }
   }
 }
 
@@ -56,6 +86,11 @@
   L - Large devices (laptops/desktops, 992px and up)
 ================================================================== */
 @media only screen and (min-width: 992px) {
+  // CONTAINER
+  .container {
+    width: 970px;
+  }
+  
   //HEADER
   .header-wrapper {
     @include header-v3;
@@ -64,7 +99,7 @@
   #logo-img {
     max-width: 374.167px;
     margin-top: 0;
-}
+  }
 
   #header-phone {
     display: none;
@@ -85,9 +120,28 @@
     }
   }
 
-  // CONTAINER
-  .container {
-    width: 970px;
+  // CARDS
+  .card {
+    &:nth-child(-n+3) {
+      width: 293.333px;
+      height: 356px;
+    }
+    &:nth-child(n+4) {
+      width: 455px;
+      height: 290px;
+    }
+  }
+
+  // CULTURE
+  .our-culture {
+    background-image: url("../img/branded.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+  }
+
+  .our-culture-wrapper {
+    width: 100%;
   }
 }
 
@@ -95,14 +149,14 @@
   XL - Extra large devices (large laptops and desktops, 1200px and up)
 ================================================================== */
 @media only screen and (min-width: 1260px) {
-  //HEADER
-  .header-wrapper {
-    @include header-v1;
-  }
-  
   // CONTAINER
   .container {
     width: 1200px;
+  }
+  
+  //HEADER
+  .header-wrapper {
+    @include header-v1;
   }
 
   // CARDS
@@ -116,23 +170,13 @@
     }
   }
 
-  // CULTURE
-  .our-culture {
-    background-image: url("../img/branded.png");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: right;
+  // NEWS
+  .news-card:last-of-type {
+    display: block;
   }
 
-  // NEWS
   .news-card-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .news-card-info {
-    a {
-      height: 48px;
-    }
   }
 
   // NEWSLETTER
