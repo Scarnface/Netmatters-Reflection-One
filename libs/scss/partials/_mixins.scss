@@ -4,7 +4,7 @@
     min-height: 70px;
     display: flex;
     align-items: center;
-    // Positions the phone icon correctly as rotated and floats the rest of the row right
+    // Positions the phone icon correctly as rotated. Floats the rest of the row right
     a:nth-of-type(2) {
       margin-left: auto;
       min-width: 47.4px;
@@ -29,7 +29,33 @@
 }
 
 @mixin header-row-3 {
+  .header-row-3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0;
+    grid-template-rows: 99px;
+    padding: 0 15px;
+    align-items: center;
+    text-align: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
 
+@mixin hs-colours($ID, $secondary) {
+  & {
+    & p:nth-of-type(1) {
+      color: $secondary
+    }
+  }
+  &:hover {
+    background-color: $secondary;
+    p:nth-of-type(1) {
+      color: #fff;
+    }
+  }
 }
 
 @mixin header-buttons {
@@ -57,17 +83,6 @@
         background-color: #7e808a;
       }
     }
-  }
-}
-
-@mixin header-phone {
-  #header-phone {
-    flex: 0 0 auto;
-    margin-left: 20px;
-    font-size: 32px;
-    color: $colour-primary;
-    // Rotate to more closely match original icon
-    transform: rotate(-45deg);
   }
 }
 

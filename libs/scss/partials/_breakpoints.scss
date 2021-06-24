@@ -8,7 +8,7 @@
   }
 
   //HEADER
-  .header-wrapper {
+  .header {
     @include header-v1;
   }
 
@@ -33,9 +33,12 @@
   }
   
   //HEADER
+  .header {
+    @include header-v2;
+  }
+  
   .header-wrapper {
     grid-template-rows: 1fr;
-    @include header-v2;
   }
 
   .header-row-1 {
@@ -97,7 +100,7 @@
   }
   
   //HEADER
-  .header-wrapper {
+  .header {
     @include header-v3;
   }
 
@@ -165,7 +168,7 @@
   }
   
   //HEADER
-  .header-wrapper {
+  .header {
     @include header-v3;
   }
 
