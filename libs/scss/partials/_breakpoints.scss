@@ -38,17 +38,22 @@
     @include header-v2;
   }
 
-  .header-row-1 a {
-    align-self: flex-start;
+  .header-row-1 {
+    a {
+      align-self: flex-start;
+    }
+    a:nth-of-type(2) {
+      display: none;
+    }
+  }
+
+  #search-small {
+    margin-left: auto;
   }
 
   #logo-img {
       max-width: 345px;
       margin-top: 0;
-  }
-
-  #header-phone {
-    display: none;
   }
 
   // CARDS
@@ -98,11 +103,10 @@
 
   #logo-img {
     max-width: 374.167px;
-    margin-top: 0;
   }
 
-  #header-phone {
-    display: none;
+  #support-button {
+    margin-left: auto;
   }
 
   #contact-button,
@@ -112,12 +116,18 @@
 
   #search-small {
     max-width: 64px;
+    margin-left: 0;
     & input {
       display: none;
     }
     & button {
       border-radius: 3px;
     }
+  }
+
+  // GALERY
+  .services-gallery-container {
+    text-align: left;
   }
 
   // CARDS
@@ -156,7 +166,22 @@
   
   //HEADER
   .header-wrapper {
-    @include header-v1;
+    @include header-v3;
+  }
+
+  #logo-img {
+    max-width: 370px;
+  }
+
+  #search-small {
+    max-width: 304px;
+    & input {
+      min-width: 240px;
+      display: inline-block;
+    }
+    & button {
+      border-radius: 0 3px 3px 0;
+    }
   }
 
   // CARDS

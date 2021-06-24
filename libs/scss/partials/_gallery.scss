@@ -1,35 +1,38 @@
 /* ================================= 
   GALLERY
 ==================================== */
-.gallery-image {
+.services-gallery {
   // Darken Image to make text easier to read
   background-image: linear-gradient(to right, #000000ff, #00000060), url("../img/home-lQs1.jpg");
-  height: 571.2px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.gallery-text {
+.services-gallery-wrapper {
+  flex: 1;
+  display: flex;
+  height: 571.2px; // ! SET THIS VALUE IN BPS
+  align-items: center;
+  justify-items: center;
+}
+
+.services-gallery-container {
+  width: 100%;
   color: #fff;
-  min-width: 100%;
-  // Draw text over image
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -25%);
+  padding: 0 15px;
   h1 {
+    margin: 0 0 25px;
     font-size: 3rem;
     font-weight: 400;
-    margin: 0 0 25px;
     line-height: 1.1;
   }
   p {
+    margin: 0 0 35px;
     font-size: 1.25rem;
     letter-spacing: .4px;
     line-height: 2.25rem;
-    margin: 0 0 35px;
   }
   button {
     color: #fff;
