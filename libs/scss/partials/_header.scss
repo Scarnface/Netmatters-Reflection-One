@@ -29,7 +29,7 @@
 .header-services {
   display: inline-block;
   padding: 19px 0 18px;
-  width: 194px;
+  width: 154.8px;
   height: 99px;
   line-height: 1;
   letter-spacing: .4px;
@@ -87,13 +87,13 @@
     margin: 0;
     padding: 0;
     li {
-      font-size: 1rem;
-      padding: 15px 0 15px 30px;
+      font-size: .8em;
+      padding: 15px 0 15px 22.5px;
     }
     // Adds a hyphen after all but the last list item
     li:not(:last-child)::after {
       color: #fff;
-      content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0-";
+      content: "\00a0\00a0\00a0\00a0\00a0\00a0-";
     }
   }
 }

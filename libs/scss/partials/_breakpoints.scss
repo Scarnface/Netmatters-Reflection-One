@@ -187,6 +187,28 @@
     }
   }
 
+  .header-services {
+    width: 193px;
+  }
+
+  .header-services-info {
+    ul {
+      li {
+        font-size: 1rem;
+        padding: 15px 0 15px 30px;
+      }
+      li:not(:last-child)::after {
+        color: #fff;
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0-";
+      }
+    }
+  }
+
+  // GALLERY
+  .services-gallery-wrapper {
+    height: 502px;
+  }
+
   // CARDS
   .card {
     height: 312px;

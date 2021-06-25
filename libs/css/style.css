@@ -36,7 +36,7 @@
 .header-services {
   display: inline-block;
   padding: 19px 0 18px;
-  width: 194px;
+  width: 154.8px;
   height: 99px;
   line-height: 1;
   letter-spacing: .4px;
@@ -148,13 +148,13 @@
 }
 
 .header-services-info ul li {
-  font-size: 1rem;
-  padding: 15px 0 15px 30px;
+  font-size: .8em;
+  padding: 15px 0 15px 22.5px;
 }
 
 .header-services-info ul li:not(:last-child)::after {
   color: #fff;
-  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0-";
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0-";
 }
 
 .header-services:hover .header-services-info {
@@ -1507,6 +1507,20 @@
   }
   #search-small button {
     border-radius: 0 3px 3px 0;
+  }
+  .header-services {
+    width: 193px;
+  }
+  .header-services-info ul li {
+    font-size: 1rem;
+    padding: 15px 0 15px 30px;
+  }
+  .header-services-info ul li:not(:last-child)::after {
+    color: #fff;
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0-";
+  }
+  .services-gallery-wrapper {
+    height: 502px;
   }
   .card {
     height: 312px;
