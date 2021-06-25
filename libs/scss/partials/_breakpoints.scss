@@ -147,7 +147,7 @@
 
   // CULTURE
   .our-culture {
-    background-image: url("libs/img/branded.png");
+    background-image: url("/libs/img/branded.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right;
@@ -211,12 +211,13 @@
 
   // CARDS
   .card {
-    height: 312px;
     &:nth-child(-n+3) {
       width: 370px;
+      height: 312px;
     }
     &:nth-child(n+4) {
       width: 270px;
+      height: 312px;
     }
   }
 

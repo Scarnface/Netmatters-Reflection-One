@@ -207,7 +207,7 @@
   GALLERY
 ==================================== */
 .services-gallery {
-  background-image: linear-gradient(to right, #000000ff, #00000060), url("../img/home-lQs1.jpg");
+  background-image: linear-gradient(to right, #000000ff, #00000060), url("/libs/img/home-lQs1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1360,7 +1360,7 @@
     height: 290px;
   }
   .our-culture {
-    background-image: url("../img/branded.png");
+    background-image: url("/libs/img/branded.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right;
@@ -1522,14 +1522,13 @@
   .services-gallery-wrapper {
     height: 502px;
   }
-  .card {
-    height: 312px;
-  }
   .card:nth-child(-n+3) {
     width: 370px;
+    height: 312px;
   }
   .card:nth-child(n+4) {
     width: 270px;
+    height: 312px;
   }
   .news-card:last-of-type {
     display: block;
