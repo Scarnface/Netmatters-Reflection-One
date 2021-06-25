@@ -40,6 +40,10 @@
     a {
       color: #fff;
       text-decoration: none;
+      text-transform: uppercase;
+      &:first-of-type {
+        font-size: 1.125rem;
+      }
     }
   }
 }
