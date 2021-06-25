@@ -139,17 +139,22 @@
 }
 
 .header-services-info ul {
-  width: 100%;
+  width: 970px;
   display: flex;
   list-style-type: none;
-  justify-content: center;
-  margin: 0;
+  justify-content: start;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 
 .header-services-info ul li {
   font-size: .8em;
   padding: 15px 0 15px 22.5px;
+}
+
+.header-services-info ul li:nth-of-type(1) {
+  padding: 15px 0 15px 17.5px;
 }
 
 .header-services-info ul li:not(:last-child)::after {
@@ -1510,9 +1515,15 @@
   .header-services {
     width: 193px;
   }
+  .header-services-info ul {
+    width: 1200px;
+  }
   .header-services-info ul li {
     font-size: 1rem;
     padding: 15px 0 15px 30px;
+  }
+  .header-services-info ul li:nth-of-type(1) {
+    padding: 15px 0 15px 15px;
   }
   .header-services-info ul li:not(:last-child)::after {
     color: #fff;
