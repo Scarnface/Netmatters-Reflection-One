@@ -33,15 +33,11 @@
     margin: 0 0 8.2px;
     line-height: 1.1;
     letter-spacing: .4px;
-    // Add the short horizontal line between elements
+    // ! CHANGE TO BORDER, REMOVE CONTENT, SEE HEADER  (Add the short horizontal line between elements) !
     &::after {
       font-family: Arial, Helvetica, sans-serif;
       content: "——";
       position: relative;
-      bottom: 1;
-      left: 0;
-      right: 0;
-      margin: auto;
       display: block;
     }
   }

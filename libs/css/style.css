@@ -250,7 +250,7 @@
 .services-gallery-container button {
   color: #fff;
   background-color: #f62459;
-  border: solid 2px #f62459;
+  border: none;
   border-radius: 3px;
   padding: 5px 20px;
   font-size: 1.25rem;
@@ -301,10 +301,6 @@
   font-family: Arial, Helvetica, sans-serif;
   content: "——";
   position: relative;
-  bottom: 1;
-  left: 0;
-  right: 0;
-  margin: auto;
   display: block;
 }
 
