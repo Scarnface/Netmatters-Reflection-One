@@ -27,7 +27,6 @@
 }
 
 .header-services {
-  position: relative;
   display: inline-block;
   padding: 19px 0 18px;
   height: 99px;
@@ -48,9 +47,9 @@
   visibility: hidden;
   position: absolute;
   z-index: 1;
-  width: 800%;
+  width: 100%;
   top: 100%;
-//  left: ??? //! HERE BE DRAGONS!
+  left: 0;
   background-color: darkgrey;
   ul {
     width: 100%;

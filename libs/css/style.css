@@ -34,7 +34,6 @@
 }
 
 .header-services {
-  position: relative;
   display: inline-block;
   padding: 19px 0 18px;
   height: 99px;
@@ -57,8 +56,9 @@
   visibility: hidden;
   position: absolute;
   z-index: 1;
-  width: 800%;
+  width: 100%;
   top: 100%;
+  left: 0;
   background-color: darkgrey;
 }
 
@@ -1194,6 +1194,7 @@
     flex: 1 1 199.583px;
   }
   .header .header-row-3 {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0;
@@ -1361,6 +1362,7 @@
     flex: 1 1 199.583px;
   }
   .header .header-row-3 {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0;

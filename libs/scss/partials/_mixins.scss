@@ -30,6 +30,7 @@
 
 @mixin header-row-3 {
   .header-row-3 {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0;
