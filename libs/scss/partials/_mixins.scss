@@ -41,9 +41,9 @@
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
-      &:first-of-type {
-        font-size: 1.125rem;
-      }
+    }
+    & > .header-services > a {
+      font-size: 1.125rem;
     }
   }
 }
