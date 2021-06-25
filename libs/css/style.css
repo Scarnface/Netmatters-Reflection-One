@@ -57,15 +57,22 @@
   visibility: hidden;
   position: absolute;
   z-index: 1;
-  width: 100%;
+  width: 800%;
   top: 100%;
   background-color: darkgrey;
 }
 
 .header-services-info ul {
+  width: 100%;
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.header-services-info ul li {
+  padding: 15px 0;
+  flex: 1;
 }
 
 .header-services:hover .header-services-info {
