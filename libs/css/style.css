@@ -36,6 +36,7 @@
 .header-services {
   display: inline-block;
   padding: 19px 0 18px;
+  width: 195px;
   height: 99px;
   line-height: 1;
   letter-spacing: .4px;
@@ -79,8 +80,9 @@
   visibility: visible;
 }
 
-.header-services-divider {
-  width: 0px;
+.header-services-divider::before {
+  display: inline-block;
+  content: "";
   height: 100%;
   border-left: 1px solid #505050;
   border-right: 1px solid #22242e;
@@ -1196,11 +1198,10 @@
   .header .header-row-3 {
     position: relative;
     width: 100%;
-    display: grid;
-    grid-template-columns: 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0;
-    grid-template-rows: 99px;
+    display: flex;
     padding: 0 15px;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
     text-align: center;
   }
   .header .header-row-3 a {
@@ -1364,11 +1365,10 @@
   .header .header-row-3 {
     position: relative;
     width: 100%;
-    display: grid;
-    grid-template-columns: 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0;
-    grid-template-rows: 99px;
+    display: flex;
     padding: 0 15px;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
     text-align: center;
   }
   .header .header-row-3 a {

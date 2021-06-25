@@ -32,11 +32,10 @@
   .header-row-3 {
     position: relative;
     width: 100%;
-    display: grid;
-    grid-template-columns: 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0;
-    grid-template-rows: 99px;
+    display: flex;
     padding: 0 15px;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
     text-align: center;
     a {
       color: #fff;
