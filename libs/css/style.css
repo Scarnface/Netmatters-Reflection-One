@@ -450,7 +450,6 @@
 }
 
 .our-culture-wrapper {
-  width: 600px;
   padding: 50px 15px;
   line-height: 1.42857143;
   color: #fff;
@@ -1529,6 +1528,9 @@
   .card:nth-child(n+4) {
     width: 270px;
     height: 312px;
+  }
+  .our-culture-wrapper {
+    max-width: 600px;
   }
   .news-card:last-of-type {
     display: block;
