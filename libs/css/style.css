@@ -632,6 +632,7 @@
   PARTNERS
 ==================================== */
 .clients {
+  max-height: 170px;
   padding: 50px 0;
   background: linear-gradient(to bottom, #E8E8E8, #fff 25%);
 }
@@ -775,6 +776,10 @@
   padding: 5px 15px;
   font-size: 1.063rem;
   line-height: 35px;
+}
+
+.newsletter-form button:hover {
+  background-color: #22242e;
 }
 
 .checkbox-container {
