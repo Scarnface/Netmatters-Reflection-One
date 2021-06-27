@@ -1353,6 +1353,9 @@
   #search-small button {
     border-radius: 3px;
   }
+  .services-gallery {
+    background-image: linear-gradient(270deg, transparent 25%, #000), url("/libs/img/home-lQs1.jpg");
+  }
   .services-gallery-container {
     text-align: left;
   }
