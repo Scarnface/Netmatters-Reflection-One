@@ -59,6 +59,11 @@
       margin-top: 0;
   }
 
+  // GALERY
+  .services-gallery {
+    height: calc(100% - 110px);
+  }
+
   // CARDS
   .card {
     &:nth-child(-n+3) {
@@ -131,6 +136,7 @@
   // GALERY
   .services-gallery {
     background-image: linear-gradient(270deg, transparent 25%, #000), url("/libs/img/home-lQs1.jpg");
+    height: calc(100% - 209px);
   }
 
   .services-gallery-container {
@@ -210,11 +216,6 @@
         content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0-";
       }
     }
-  }
-
-  // GALLERY
-  .services-gallery-wrapper {
-    height: 502px;
   }
 
   // CARDS
