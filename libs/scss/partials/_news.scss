@@ -27,10 +27,10 @@
 }
 
 .news-card-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  column-gap: 30px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 50px 15px 20px;
 }
 

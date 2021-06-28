@@ -77,12 +77,15 @@
   }
 
   // NEWS
-  .news-card:last-of-type {
-    display: none;
+  .news-card {
+    max-width: 345px;
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
   }
 
-  .news-card-wrapper {
-    grid-template-columns: 1fr 1fr;
+  .news-card:last-of-type {
+    display: none;
   }
 
   .news-card-info {
@@ -166,6 +169,11 @@
   .our-culture-wrapper {
     width: 100%;
   }
+
+  // NEWS
+  .news-card {
+    max-width: 455px;
+  }
 }
 
 /* ================================================================== 
@@ -236,12 +244,15 @@
   }
 
   // NEWS
-  .news-card:last-of-type {
-    display: block;
+  .news-card {
+    max-width: 370px;
+    &:nth-child(-n+2) {
+      margin-right: 30px;
+    }
   }
 
-  .news-card-wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
+  .news-card:last-of-type {
+    display: block;
   }
 
   // NEWSLETTER
