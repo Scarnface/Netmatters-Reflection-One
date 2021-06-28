@@ -210,10 +210,15 @@
 
 // ABOUT
 @mixin about-icon-container {
+  min-width: 120px;
+  flex: 1;
   text-align: center;
   font-size: 1.75rem;
   line-height: 55px;
   background-color: #262834;
+  &:first-child {
+    margin-right: 30px;
+  }
   &:hover {
     cursor: pointer;
   }

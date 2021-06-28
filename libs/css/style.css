@@ -927,21 +927,35 @@
 
 .about-social-container {
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 30px;
   padding: 6px 0 20px;
+}
+
+.social-row {
+  display: flex;
+  flex: 1;
+}
+
+.social-row:nth-of-type(1) {
+  margin-bottom: 30px;
 }
 
 .about-icon-fb,
 .about-icon-tw,
 .about-icon-ig,
 .about-icon-li {
+  min-width: 120px;
+  flex: 1;
   text-align: center;
   font-size: 1.75rem;
   line-height: 55px;
   background-color: #262834;
+}
+
+.about-icon-fb:first-child,
+.about-icon-tw:first-child,
+.about-icon-ig:first-child,
+.about-icon-li:first-child {
+  margin-right: 30px;
 }
 
 .about-icon-fb:hover,
