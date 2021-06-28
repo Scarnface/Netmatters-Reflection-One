@@ -2,7 +2,7 @@
   PARTNERS
 ==================================== */
 .clients {
-  max-height: 170px;
+  max-height: 162.833px;
   padding: 50px 0;
   background: linear-gradient(to bottom, #E8E8E8, #fff 25%);
 }
@@ -18,10 +18,12 @@
 .client-img {
   position: relative;
   display: inline-block;
+  & > img {
+    padding: 0 20px;
+  }
 }
 
 .client-img .client-img-top {
-  flex: 1;
   display: none;
   position: absolute;
   top: 0;
