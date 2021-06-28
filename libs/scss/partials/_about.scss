@@ -2,11 +2,15 @@
   ABOUT
 ==================================== */
 .about-netmatters {
+  background-color: $colour-primary;
+}
+
+.about-wrapper {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 47px 0 43px;
-  background-color: $colour-primary;
   color: #fff;
   font-size: .8125rem;
   letter-spacing: .4px;

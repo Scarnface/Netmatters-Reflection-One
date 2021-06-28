@@ -873,18 +873,22 @@
   ABOUT
 ==================================== */
 .about-netmatters {
+  background-color: #333645;
+}
+
+.about-wrapper {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 47px 0 43px;
-  background-color: #333645;
   color: #fff;
   font-size: .8125rem;
   letter-spacing: .4px;
   line-height: 1.375rem;
 }
 
-.about-netmatters :nth-child(even) :last-child {
+.about-wrapper :nth-child(even) :last-child {
   margin-bottom: 0;
 }
 
