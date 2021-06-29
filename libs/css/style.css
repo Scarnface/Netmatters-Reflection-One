@@ -366,6 +366,10 @@
   background-color: #67809f;
 }
 
+#card-one:hover.card h2::after {
+  border-top: 3px solid #fff;
+}
+
 #card-two p.card-icon, #card-two button {
   color: #fff;
   background-color: #4183d7;
@@ -379,6 +383,10 @@
 #card-two:hover.card {
   color: #fff;
   background-color: #4183d7;
+}
+
+#card-two:hover.card h2::after {
+  border-top: 3px solid #fff;
 }
 
 #card-three p.card-icon, #card-three button {
@@ -396,6 +404,10 @@
   background-color: #2ecc71;
 }
 
+#card-three:hover.card h2::after {
+  border-top: 3px solid #fff;
+}
+
 #card-four p.card-icon, #card-four button {
   color: #fff;
   background-color: #d64541;
@@ -409,6 +421,10 @@
 #card-four:hover.card {
   color: #fff;
   background-color: #d64541;
+}
+
+#card-four:hover.card h2::after {
+  border-top: 3px solid #fff;
 }
 
 #card-five p.card-icon, #card-five button {
@@ -426,6 +442,10 @@
   background-color: #926fb1;
 }
 
+#card-five:hover.card h2::after {
+  border-top: 3px solid #fff;
+}
+
 #card-six p.card-icon, #card-six button {
   color: #fff;
   background-color: #f62459;
@@ -441,6 +461,10 @@
   background-color: #f62459;
 }
 
+#card-six:hover.card h2::after {
+  border-top: 3px solid #fff;
+}
+
 #card-seven p.card-icon, #card-seven button {
   color: #fff;
   background-color: #926fb1;
@@ -454,6 +478,10 @@
 #card-seven:hover.card {
   color: #fff;
   background-color: #926fb1;
+}
+
+#card-seven:hover.card h2::after {
+  border-top: 3px solid #fff;
 }
 
 /* ================================= 

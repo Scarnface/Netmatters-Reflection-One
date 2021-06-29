@@ -205,6 +205,9 @@
     &.card {
       color: #fff;
       background-color: $secondary;
+      h2::after {
+        border-top: 3px solid #fff;
+      }
     }
   }
 }
