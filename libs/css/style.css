@@ -642,32 +642,37 @@
 }
 
 /* ================================= 
-  PARTNERS
+  CLIENTS
 ==================================== */
 .clients {
-  max-height: 162.833px;
-  padding: 50px 0;
   background: linear-gradient(to bottom, #E8E8E8, #fff 25%);
 }
 
 .clients-wrapper {
-  width: 100%;
+  min-width: 100%;
+  max-height: 170px;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.client-img {
-  position: relative;
+.client-container {
   display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: max-content;
 }
 
-.client-img > img {
-  padding: 0 20px;
+.client-img,
+.client-img-top {
+  min-width: 86.4px;
+  min-height: 45.116px;
+  padding: 50px 20px;
 }
 
-.client-img .client-img-top {
+.client-container .client-img-top {
   display: none;
   position: absolute;
   top: 0;
@@ -675,11 +680,11 @@
   z-index: 99;
 }
 
-.client-img:hover .client-img-top {
-  display: inline;
+.client-container:hover .client-img-top {
+  display: inline-block;
 }
 
-.client-img:hover .client-description {
+.client-container:hover .client-description {
   visibility: visible;
 }
 
@@ -689,7 +694,7 @@
   position: absolute;
   z-index: 1;
   width: 260px;
-  bottom: 127px;
+  bottom: 100%;
   left: 50%;
   margin-left: -130px;
   padding: 20px;
@@ -717,7 +722,7 @@
 .triangle-down {
   position: absolute;
   z-index: 1;
-  bottom: -68px;
+  bottom: -65px;
   left: 50%;
   width: 0;
   height: 0;
@@ -1600,6 +1605,9 @@
   }
   .news-card:last-of-type {
     display: block;
+  }
+  .triangle-down {
+    bottom: -68px;
   }
   .input-wrapper-double {
     grid-template-columns: 1fr 1fr;
