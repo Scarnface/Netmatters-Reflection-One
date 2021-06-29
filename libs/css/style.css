@@ -1167,6 +1167,7 @@
     font-size: 1.25em;
   }
   .header .search-container {
+    width: 237px;
     max-width: 237px;
   }
   .header .search-container input, .header .search-container button {
@@ -1313,6 +1314,7 @@
     font-size: 1.25em;
   }
   .header .search-container {
+    width: 237px;
     max-width: 237px;
   }
   .header .search-container input, .header .search-container button {
@@ -1489,6 +1491,7 @@
     font-size: 1.25em;
   }
   .header .search-container {
+    width: 237px;
     max-width: 237px;
   }
   .header .search-container input, .header .search-container button {

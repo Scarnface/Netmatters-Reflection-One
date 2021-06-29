@@ -166,6 +166,7 @@
 @mixin header-search-small {
   @include header-search;
   .search-container {
+    width: 237px;
     max-width: 237px;
     input, button {
       height: 56px;
