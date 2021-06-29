@@ -19,21 +19,13 @@
   }
   label {
     display: inline-block;
-    margin-bottom: 5px;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .4px;
-    line-height: 1.42857143;
+    line-height: 32px;
     span {
       color: crimson;
     }
-  }
-  p {
-    overflow: hidden;
-    line-height: 32px;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: .4px;
     a {
       color: $colour-primary;
     }
@@ -60,8 +52,7 @@
   display: block;
   position: relative;
   float: left;
-  margin-right: 17px;
-  padding-left: 35px;
+  padding-left: 55px;
   font-size: 22px;
   cursor: pointer;
   user-select: none;
@@ -120,6 +111,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  // IE wont shrink without this
+  min-width: 1px;
 }
 
 .input-wrapper-single {
@@ -134,5 +127,10 @@
     &:focus {
       border: solid 1px #87ceeb;
     }
+  }
+  label
+  {
+    margin-bottom: 5px;
+    line-height: 1.42857143;
   }
 }

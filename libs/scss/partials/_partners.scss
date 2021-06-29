@@ -7,14 +7,17 @@
 
 .partners-wrapper {
   width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 82px 58px;
-  grid-row-gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partner-row-1 {
+  margin-bottom: 30px;
 }
 
 .partner-row-1,
 .partner-row-2 {
+  width: 100%;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
@@ -36,5 +39,5 @@
 }
 
 .partner-img:hover .partner-img-top {
-  display: inline;
+  display: inline-block;
 }
