@@ -19,7 +19,9 @@
   position: relative;
   flex-grow: 1;
   flex-shrink: 1;
-  // IE wont shrink without a width defined. This also shrinks the container so the tooltip is aligned above.
+  // IE wont shrink without this
+  min-width: 1px;
+  // Shrinks the container so the tooltip is centered above
   max-width: max-content;
 }
 
@@ -38,10 +40,12 @@
   z-index: 99;
 }
 
+// Colour image on hover
 .client-container:hover .client-img-top {
   display: inline-block;
 }
 
+// Tooltip on hover
 .client-container:hover .client-description {
   visibility: visible;
 }

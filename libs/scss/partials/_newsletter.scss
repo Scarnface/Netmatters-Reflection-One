@@ -53,7 +53,9 @@
   }
 }
 
-// The container
+// Custom checkbox styling
+
+// Checkbox container
 .checkbox-container {
   display: block;
   position: relative;
@@ -115,13 +117,13 @@
 }
 
 .input-wrapper-double {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  column-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .input-wrapper-single {
+  width: 100%;
   input {
     height: 47px;
     width: 100%;

@@ -121,6 +121,7 @@
   }
 }
 
+// Header search template
 @mixin header-search {
   .search-container {
     display: flex;
@@ -139,7 +140,8 @@
     }
   }
 }
-  
+
+// Extends template for large breakpoints small search bar
 @mixin header-search-big {
   @include header-search;
   .search-container {
@@ -163,6 +165,7 @@
   }
 }
 
+// Extends template for small breakpoints large search bar
 @mixin header-search-small {
   @include header-search;
   .search-container {

@@ -36,10 +36,6 @@
   .header {
     @include header-v2;
   }
-  
-  .header-wrapper {
-    grid-template-rows: 1fr;
-  }
 
   .header-row-1 {
     a {
@@ -174,6 +170,14 @@
   .news-card {
     max-width: 455px;
   }
+
+  // NEWSLETTER
+  .input-wrapper-single {
+    width: calc(100% / 2 - 15px);
+    &:first-of-type {
+      margin-right: 30px;
+    }
+  }
 }
 
 /* ================================================================== 
@@ -259,10 +263,5 @@
   // CLIENTS
   .triangle-down {
     bottom: -68px;
-  }
-
-  // NEWSLETTER
-  .input-wrapper-double {
-    grid-template-columns: 1fr 1fr;
   }
 }
