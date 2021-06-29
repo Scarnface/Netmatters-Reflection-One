@@ -8,6 +8,8 @@
 }
 
 .newsletter-form {
+  // IE wont shrink without this
+  min-width: 1px;
   padding-left: 45px;
   padding-right: 45px;
   h2 {
