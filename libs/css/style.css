@@ -1595,6 +1595,7 @@
     max-width: 370px;
   }
   #search-small {
+    width: 304px;
     max-width: 304px;
   }
   #search-small input {
