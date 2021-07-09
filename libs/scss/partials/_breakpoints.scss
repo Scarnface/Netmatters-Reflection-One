@@ -7,13 +7,18 @@
     width: 100%;
   }
 
-  //HEADER
+  // HEADER
   .header {
     @include header-v1;
   }
 
   #search-small {
     display: none;
+  }
+
+  // NEWS
+  .news-card:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 
   // PARTNERS / CLIENTS

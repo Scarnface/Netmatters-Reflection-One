@@ -124,10 +124,12 @@
     width: 100%;
     margin: 0 0 15px;
     border: solid 1px #d3d3d3;
+    padding-left: 15px;
     outline: inherit;
     transition : border .15s ease-in;
     &:focus {
-      border: solid 1px #87ceeb;
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      border: 1px solid rgba(81, 203, 238, 1);
     }
   }
   label
