@@ -1296,6 +1296,7 @@
   }
   .news-card:nth-child(1) {
     margin-right: 30px;
+    box-shadow: 50px 20px 20px -20px rgba(0, 0, 0, 0.05);
   }
   .news-card:last-of-type {
     display: none;
@@ -1682,6 +1683,7 @@
   }
   .news-card:nth-child(-n+2) {
     margin-right: 30px;
+    box-shadow: 50px 20px 20px -20px rgba(0, 0, 0, 0.05);
   }
   .news-card:last-of-type {
     display: block;
